@@ -5,9 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <title>Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <div class="overlay"></div>
+    <form action="">
+      <h1>Add a book</h1>
+      <input name="book" type="text" placeholder="Book Name" />
+      <input name="author" type="text" placeholder="Author Name" />
+      <input name="pages" type="number" placeholder="Pages" />
+      <label for=""
+        >Have you read it? <input name="isRead" type="checkbox"
+      /></label>
+      <button class="submit">Submit</button>
+    </form>
+
+    <header>
+      <h1>Library</h1>
+    </header>
+
+    <main>
+      <div class="add-book">
+        <button>+ Add Book</button>
+      </div>
+
+      <div class="book-details">
+        <div class="container">
+          <div class="card">
+            <h1 class="book">Harry Potter 123</h1>
+            <h1 class="author">JK rolling 123</h1>
+            <h1 class="Pages">12344 Pages</h1>
+            <button class="read">Read</button>
+            <button class="remove">Remove</button>
+          </div>
+        </div>
+        <!-- card -->
+      </div>
+    </main>
+
+    <footer></footer>
+
     <script src="index.js"></script>
   </body>
 </html>

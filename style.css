@@ -1,0 +1,151 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Bree Serif", serif;
+  background-color: #f8f3ed;
+}
+
+header {
+  background-color: #f3e5d0;
+  height: 15vh;
+  display: grid;
+  box-shadow: 0px 3px 6px #bbb;
+}
+
+header > h1 {
+  align-self: center;
+  justify-self: center;
+  font-size: 60px;
+  font-weight: 600;
+  width: 70%;
+}
+
+.add-book {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 15vh;
+}
+
+.add-book > button {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #593e26;
+  border-radius: 20px;
+  background-color: #d9aa63;
+}
+
+.book-details {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  height: 70vh;
+}
+
+.book-details > .container {
+  display: grid;
+  row-gap: 30px;
+  column-gap: 30px;
+  justify-items: center;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 90%;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  row-gap: 10px;
+  width: 300px;
+  height: 270px;
+  padding: 30px 10px 30px 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 1px 3px 6px #bbb;
+}
+
+.card > * {
+  display: block;
+}
+
+.read {
+  background-color: greenyellow;
+  height: 35px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.remove {
+  background-color: rgb(245, 106, 106);
+  height: 35px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+form {
+  background-color: #f3e5d0;
+  height: 400px;
+  width: 300px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+
+  justify-items: center;
+  position: fixed;
+  top: calc(50% - 200px);
+  left: calc(50% - 150px);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 6px 10px #aaa;
+  visibility: hidden;
+}
+
+form > input {
+  outline: none;
+  width: 90%;
+  height: 40px;
+  text-indent: 20px;
+  border-radius: 8px;
+}
+
+form > h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form > label {
+  font-size: 15px;
+}
+form > label > input {
+  margin-left: 10px;
+  height: 15px;
+  margin-top: 10px;
+}
+
+form > .submit {
+  color: #593e26;
+  font-weight: 50;
+  font-size: 20px;
+  display: inline;
+  height: 40px;
+  border-radius: 10px;
+  width: 90%;
+  background-color: #d9aa63;
+  text-align: center;
+  z-index: 1;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+}
